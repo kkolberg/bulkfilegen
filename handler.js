@@ -40,7 +40,7 @@ function cat(event, context, callback) {
       console.log('saved x=' + x);
       x++;
 
-      if (x < 10) {
+      if (x < 100000) {
         cat(cb);
       } else {
         cb(null, {});
